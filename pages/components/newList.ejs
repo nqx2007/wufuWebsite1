@@ -1,0 +1,13 @@
+<div class="newsList-area">
+    <% for(var i=0;i<data.length;i++){ %>
+        <div class="news-item">
+            <img src=<% data[i].url %> alt="">
+            <div class="news-item-info">
+                <h6 class="item-info-name"><% data[i].name %></h6>
+                <i class="item-info-time"><% data[i].time %></i>
+                <div class="item-info-content"><% data[i].content %></div>
+            </div>
+            <a href="#">learn more <i class="fa fa-align-right"></i></a>
+        </div>
+    <% } %>
+</div>
