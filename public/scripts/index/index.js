@@ -15,14 +15,13 @@ indexEffect.indexBarShow=function(){
 indexEffect.fullPageAct=function(){
     var options={
         navigation:true,
-        paddingTop:'100px',
         navigationPosition:'right',
         sectionsColor : ['#fff', '#fff', '#fff', '#fff'],
         afterLoad: function(anchorLink, index){
             if(index == 2){
                 $('.section2').find('.item-box').animate({
                     left: '0'
-                }, 600, 'easeOutExpo');
+                }, 600, 'linear');
             }
             if(index == 3){
                 $('.section3').find('.pro-box').animate({
@@ -37,7 +36,7 @@ indexEffect.fullPageAct=function(){
             if(index == '2'){
                 $('.section2').find('.item-box').animate({
                     left: '-120%'
-                }, 600, 'easeOutExpo');
+                }, 600, 'linear');
             }
             if(index == '3'){
                 $('.section3').find('.pro-box').animate({
