@@ -1,5 +1,5 @@
 /*头部导航菜单*/
-.index-bar{
+.header{
     position:fixed;
     z-index:100;
     top:0;
@@ -81,11 +81,13 @@
     line-height:90px;
     font-size:16px;
 }
+.index-bar .contract-way .hot-tel i{
+    font-style:normal;
+    font-weight:bold;
+}
 /*页面底部信息*/
 .footer{
-    position:absolute;
-    bottom:0;
-    left:0;
+    position:relative;
     width:100%;
     background:#222;
 }
@@ -96,13 +98,13 @@
 .footer .footer-content dt{
     font-family:"microsoft yahei";
     font-size:14px;
+    line-height:24px;
     font-weight:bold;
     color:#fff;
     cursor:default;
 }
 .footer .footer-content dd a{
-    padding-top:20px;
-    line-height:20px;
+    line-height:24px;
     font-family:"microsoft yahei";
     font-size:12px;
     text-decoration:none;
@@ -114,6 +116,7 @@
 .footer .copyright{
     height:36px;
     border-top:1px solid #ddd;
+    text-align:center;
     line-height:36px;
     font-size:12px;
     color:#fff;
