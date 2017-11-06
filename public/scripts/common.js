@@ -13,6 +13,11 @@ commonEffect.commonHeader=function(){
         $(this).find(".nav-son").slideUp(300);
     });
 };
+function render(container,template,data){
+    var proList=document.getElementById(template).innerHTML;
+    var content=ejs.render(proList,{data:data});
+    container.html(content);
+};
 $(function(){
     commonEffect.commonHeader();
 })

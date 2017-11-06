@@ -46,11 +46,21 @@
       <file leaf-file-name="financeInfo.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/scripts/investInfo/financeInfo.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="565">
-              <caret line="40" column="2" lean-forward="true" selection-start-line="40" selection-start-column="2" selection-end-line="40" selection-end-column="2" />
+            <state relative-caret-position="360">
+              <caret line="14" column="13" lean-forward="true" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
               <folding>
                 <element signature="e#0#40#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="common.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/scripts/common.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="19" column="2" lean-forward="true" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="2" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -77,13 +87,13 @@
         <option value="$PROJECT_DIR$/pages/index.html" />
         <option value="$PROJECT_DIR$/public/style/index/index.css" />
         <option value="$PROJECT_DIR$/pages/investorService/investHelp.html" />
-        <option value="$PROJECT_DIR$/public/scripts/common.js" />
         <option value="$PROJECT_DIR$/public/scripts/investInfo/dynamicInfo.js" />
         <option value="$PROJECT_DIR$/public/style/style.css" />
         <option value="$PROJECT_DIR$/pages/investInfo/dynamicInfo.html" />
         <option value="$PROJECT_DIR$/public/scripts/investorService/financeInfo.js" />
         <option value="$PROJECT_DIR$/public/scripts/investorService/newsList.js" />
         <option value="$PROJECT_DIR$/pages/investInfo/financeInfo.html" />
+        <option value="$PROJECT_DIR$/public/scripts/common.js" />
         <option value="$PROJECT_DIR$/public/scripts/investInfo/financeInfo.js" />
       </list>
     </option>
@@ -390,12 +400,12 @@
       <workItem from="1509539401791" duration="5650000" />
       <workItem from="1509546038172" duration="528000" />
       <workItem from="1509547237876" duration="69000" />
-      <workItem from="1509971266200" duration="6374000" />
+      <workItem from="1509971266200" duration="6824000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23109000" />
+    <option name="totallyTimeSpent" value="23559000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
@@ -677,14 +687,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/scripts/common.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="14" column="2" lean-forward="false" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/style/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-212">
@@ -744,10 +746,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/scripts/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="19" column="2" lean-forward="true" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/scripts/investInfo/financeInfo.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="565">
-          <caret line="40" column="2" lean-forward="true" selection-start-line="40" selection-start-column="2" selection-end-line="40" selection-end-column="2" />
+        <state relative-caret-position="360">
+          <caret line="14" column="13" lean-forward="true" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
           <folding>
             <element signature="e#0#40#0" expanded="false" />
           </folding>
