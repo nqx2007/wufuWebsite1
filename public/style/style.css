@@ -119,3 +119,55 @@
 .newAccount-area .step h3{
     font-size:22px;
 }
+/*投资助手*/
+.investHelp-area{
+    background:url(../images/investHelp/knowledgestep_bg.png) no-repeat -36px 34px;
+}
+/*热门资讯*/
+.news-list{
+    padding:30px 10px 10px;
+    width:100%;
+    overflow:hidden;
+}
+.news-list ul{
+    margin:0;
+    padding:0;
+}
+.news-list ul li{
+    list-style:none;
+}
+.news-list ul li a{
+    display:block;
+    width:100%;
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    line-height:36px;
+    font-family:'microsoft yahei';
+    font-size:12px;
+    color:#000;
+    text-decoration:none;
+}
+.news-list ul li .num{
+    display: inline-block;
+    margin-right: 10px;
+    width: 20px;
+    background: #f00;
+    color: #fff;
+    text-align: center;
+
+}
+.news-list ul li .info-time{
+    padding-left:30px;
+    color:#999;
+}
+/*三板动态*/
+.info-tit{
+    padding-left: 10px;
+    border-left: 6px solid red;
+    font-size: 20px;
+    font-family:"microsoft yahei";
+    color: #000;
+    font-weight: bold;
+    line-height: 36px;
+}

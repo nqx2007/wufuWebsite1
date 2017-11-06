@@ -11,8 +11,8 @@ commonEffect.commonHeader=function(){
     },function(){
         $(this).removeClass("select");
         $(this).find(".nav-son").slideUp(300);
-    })
-}
+    });
+};
 $(function(){
     commonEffect.commonHeader();
 })

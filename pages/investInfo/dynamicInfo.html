@@ -66,42 +66,30 @@
         <div class="col-xs-12 breadcrumb-area">
             <span class="breadcrumb-txt">当前位置：</span>
             <ol class="breadcrumb">
-                <li><a href="#">投资者服务</a></li>
-                <li><a href="#">投资助手</a></li>
+                <li><a href="#">昊富资讯</a></li>
+                <li><a href="#">三板动态</a></li>
             </ol>
         </div>
     </div>
-<!--</div>-->
-<!--<div class="container-fliud">-->
-    <div class="row investHelp-area">
-        <div class="col-xs-12 ">
-            <div class="row">
-                <div class="col-sm-3" style="padding-left:40px;">
-                    <img src="../../public/images/investHelp/ico_step3.png" alt="" class="img-responsive">
-                    <h3>项目解读</h3>
-                    <p></p>
-                </div>
-                <div class="col-sm-3 ">
-                    <img src="../../public/images/investHelp/ico_step4.png" alt="" class="img-responsive center-block">
-                    <h3 class="text-center">签订协议</h3>
-                    <p></p>
-                </div>
-                <div class="col-sm-3 ">
-                    <img src="../../public/images/investHelp/ico_step5.png" alt="" class="img-responsive center-block">
-                    <h3 class="text-center">接受股权证书</h3>
-                    <p></p>
-                </div>
-                <div class="col-sm-3 ">
-                    <img src="../../public/images/investHelp/ico_step6.png" alt="" class="img-responsive center-block">
-                    <h3 class="text-center">企业股东名册变更读</h3>
-                    <p></p>
-                </div>
-                <div class="col-sm-12 text-center" style="margin-top:220px;margin-bottom:60px;">
-                    <img src="../../public/images/investHelp/ico_step8.png" alt="" class="img-responsive center-block">
-                    <h3>认购成功</h3>
-                    <p></p>
-                </div>
+    <div class="row dynamicInfo-area">
+            <div class="col-xs-12 col-md-8 ">
+                <div class="info-tit">三板动态</div>
+                <div class="info-content"></div>
             </div>
+            <div class="col-xs-12 col-md-4 ">
+                <div class="info-tit">热门资讯</div>
+                <div class="news-list"></div>
+            </div>
+        <div class="col-xs-12 text-center">
+            <ul class="pagination">
+                <li><a href="#">&laquo;</a></li>
+                <li class="active"><a href="#">1</a></li>
+                <li class="disabled"><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">&raquo;</a></li>
+            </ul>
         </div>
     </div>
 </div>
@@ -152,11 +140,34 @@
     </div>
     <p class="copyright">©2017 浙江昊富资产管理有限公司 版权所有</p>
 </div>
+<script id="dynamicInfoList-area" type="text/template">
+    <% for(var i=0;i<data.length;i++){ %>
+    <div class="item-module">
+        <a href="#" class="item-img"><img src='<%= data[i].url %>' alt=""></a>
+        <div class="item-info">
+            <h6 class="item-info-name"><%= data[i].name %></h6>
+            <i class="item-info-time"><%= data[i].time %></i>
+            <div class="item-info-content"><%= data[i].content %></div>
+            <a href="#" class="learn-more">learn more <i class="fa fa-angle-right"></i></a>
+        </div>
+    </div>
+    <% } %>
+</script>
+<script id="newsList" type="text/template">
+    <ul>
+        <% for(var i=0;i<data.length;i++){ %>
+            <li><a href="#"><span class="num"><%= i+1 %></span><%= data[i].title %></a>
+                <span class="info-time"><%= data[i].time %></span>
+            </li>
+        <% }%>
+    </ul>
+</script>
 <script src="../../public/library/jquery/jquery-3.2.1.min.js"></script>
 <script src="../../public/library/ejs/ejs.min.js"></script>
 <script src="../../public/library/jquery/jquery.easing.1.3.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.js"></script>
 <script src="../../public/library/bootstrap-3.3.7/dist/js/bootstrap.min.js"></script>
 <script src="../../public/scripts/common.js"></script>
+<script src="../../public/scripts/investInfo/dynamicInfo.js"></script>
 </body>
 </html>
