@@ -2,16 +2,6 @@
  * Created by pooh on 2017/11/6.
  */
 var dynamicInfoPro=dynamicInfoPro ||{};
-dynamicInfoPro.renderInfoList=function(data){
-    var proList=document.getElementById("dynamicInfoList-area").innerHTML;
-    var content=ejs.render(proList,{data:data});
-    $(".info-content").html(content);
-};
-dynamicInfoPro.renderNewsList=function(data){
-    var proList=document.getElementById("newsList").innerHTML;
-    var content=ejs.render(proList,{data:data});
-    $(".news-list").html(content);
-}
 $(function(){
     var itemList=[
         {url:'../../public/images/index/project.jpg',name:'项目一',time:'2001-10-12',content:'hahahahahahhh'},
@@ -36,6 +26,6 @@ $(function(){
         {title:"hahahahahahahahhaahhahah",time:"2017-10-11"}
 
     ];
-    dynamicInfoPro.renderNewsList(newsList);
-    dynamicInfoPro.renderInfoList(itemList);
+    render($(".dynamicInfo-area .news-list"),"newsList",newsList);
+    render($(".dynamicInfo-area .info-content"),"dynamicInfoList-area",itemList);
 })
