@@ -162,6 +162,9 @@
     color:#999;
 }
 /*三板动态*/
+.sanbanKnowedge-area{
+    margin-bottom:100px;
+}
 .info-tit{
     padding-left: 10px;
     border-left: 6px solid red;
@@ -170,4 +173,41 @@
     color: #000;
     font-weight: bold;
     line-height: 36px;
+}
+/*三板知识*/
+.info-area{
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 2px solid #ddd;
+}
+.info-area .info-content{
+    padding:20px;
+    margin:20px 0;
+    border-radius:20px;
+    background:#eee;
+}
+.info-area .info-content h4{
+    line-height:40px;
+    font-weight:bold;
+}
+.info-area .info-content p{
+    text-indent:2em;
+    line-height:36px;
+}
+.info-area .info-content a{
+    text-decoration:none;
+    font-family:"Arial";
+    font-size:20px;
+    color:#f00;
+}
+.info-area .info-content a span{
+    display:inline-block;
+    font-size:20px;
+    line-height:30px;
+    vertical-align:middle;
+    margin-right:10px;
+}
+/*联系我们*/
+.contractUs-area{
+    padding-bottom:15px;
 }
