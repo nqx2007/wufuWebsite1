@@ -88,21 +88,25 @@ function buildAjaxPaginator(paginatorSelector, option) {
 	$.extend(_option, option);
 	paginatorSelector.bootstrapPaginator(_option);
 }
-function listPageShow(dataContainer,paginatorContainer,ajaxUrl){
-	queryOperate(1,10,ajaxUrl);
-	var defaultPagination={"page":1,"pageSize":10};
+function listPageShow(dataContainer,paginatorContainer,ajaxUrl,queryDataAdd){
+	var defaultPagination={pageNo:1,pageSize:10};
+	var defaultQueryData={
+		pageNo:defaultPagination.pageNo,
+		pageSize:defaultPagination.pageSize
+	};
+	$.extend(defaultQueryData,queryDataAdd);
+	queryOperate(defaultPagination,ajaxUrl);//初始化
 	//重写点击分页执行的方法 传递当前点击的页面
 	function onPageClick(event, originalEvent, type, page) {
-		queryOperate(page,defaultPagination.pageSize,ajaxUrl);
+		queryOperate($.extend(defaultQueryData,{pageNo:page,pageSize:defaultPagination.pageSize}),ajaxUrl);
 	};
 	//查询操作
-	function queryOperate(page,pageSize,url){
-		var queryData={page: page||1, pageSize: pageSize || 10};
+	function queryOperate(queryData,url){
 		$.ajax({
 			data:queryData,
 			url:url,
 			complete:function(result){
-				setAjaxPaginator(paginatorSelector,result,{currentPage: queryData.page, pageSize:queryData.pageSize,onPageClicked: onPageClick});
+				setAjaxPaginator(paginatorContainer,result,{currentPage: queryData.page, pageSize:queryData.pageSize,onPageClicked: onPageClick});
 				renderTemplate(result,dataContainer)
 			}
 		})
